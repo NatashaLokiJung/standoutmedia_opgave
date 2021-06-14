@@ -1,74 +1,218 @@
 /* VARIABLER  */
 
 :root {
-    /* COLORS */
-    --dark: #000000;
-    --txt-dark: #000000;
-    --light: #fff;
-    --txt-light: #fff;
-    --midtone: #313132 ;
-    --darktone: #222;
-    --primary: #ecc511;
-    --secondary: #7a0202;
-  
-    /* FONT SIZE */
-    --txt-large: 36px;
-    --txt-medium: 24px;
-    --txt-regular: 20px;
-    --txt-small: 16px;
-    --txt-tiny: 12px;
-  }
-  
-  /* ---------------------------------------------------------------------------- */
-  
-  /* BASE */
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    background: var(--light);
-    color: var(--txt-dark);
-  }
-  
+  /* COLORS */
+  --dark: #000000;
+  --txt-dark: #000000;
+  --light: #fff;
+  --txt-light: #fff;
+  --midtone: #313132;
+  --darktone: #222;
+  --primary: #ecc511;
+  --secondary: #7a0202;
+
+  /* FONT SIZE */
+  --txt-large: 36px;
+  --txt-medium: 24px;
+  --txt-regular: 20px;
+  --txt-small: 16px;
+  --txt-tiny: 13px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* BASE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--light);
+  color: var(--txt-dark);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 18px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+header {
+  margin: 25px auto;
+}
+
+nav {
+  max-width: 1020px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.nav__logo {
+  max-width: 200px;
+}
+
+.nav__contact {
+  min-width: 400px;
+  font-size: var(--txt-tiny);
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__links a {
+  padding: 15px 10px;
+  font-size: var(--txt-tiny);
+}
+
+.FA {
+  color: var(--secondary);
+  font-size: var(--txt-regular);
+  margin: 0 10px;
+}
+
+main {
+  margin: 25px auto;
+}
+
+.main__cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.main__card {
+  padding-right: 10px;
+  text-align: center;
+}
+
+.main__contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.main__form {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.main__map {
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 0;
+  color: var(--txt-dark);
+}
+
+a:hover {
+  border-bottom: 2px solid var(--primary);
+}
+
+.txt-box {
+  max-width: 1120px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--midtone);
+}
+
+.footer__info-box {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: right;
+  color: var(--txt-light);
+}
+
+.footer__credits {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: var(--txt-light);
+  font-size: var(--txt-tiny);
+}
+
+/* SLIDER */
+
+.slider {
+  position: relative;
+}
+
+.slider__txt {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  margin: 60px 20%;
+  color: var(--txt-light)
+}
+
+.slider__btn{
+    background-color: #7a0202a4;
+    color: var(--txt-light);
+    padding: 10px 25px;
+    margin: 30px 0;
+}
+
+/* FORM */
+
+#minForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#minForm > input {
+  height: 35px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+#sendKnap {
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: var(--secondary);
+  color: var(--txt-light);
+  cursor: pointer;
+  border: none;
+}
+
+.form__besked {
+  height: 240px;
+  margin-top: 10px;
+  padding: 7px;
+}
+
+@media (max-width: 450px) {
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
   }
-
-  header{
-    margin: 25px auto;
-  }
-
-  nav{
-    max-width: 1020px;
-    margin: 25px auto;
-  }
-
-  main{
-    margin: 25px auto;
-  } 
-    /* ---------------------------------------------------------------------------- */
- 
-  a{
-      text-decoration: none;
-      padding: 5px 0;
-      color: var(--txt-dark)
-  }
-
-  a:hover {
-    border-bottom: 2px solid var(--primary);
-  }
-
-  .txt-box{
-    max-width: 1020px;
-    margin: 25px auto;
-  }
-  
- 
+}
