@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://kit.fontawesome.com/e0dbb69904.js" crossorigin="anonymous"></script>
-    
+
     <title>Vedsted Gulvservice</title>
 </head>
-<body>
 
+<body>
     <div class="wrapper">
         <header>
             <nav>
-                <img src="/img/logo_korrekt.png" alt="Vedtsted logo">
-                <i class="fas fa-envelope"></i><a href="mailto:Info@vedsted-gulve.dk">Info@vedsted-gulve.dk</a> <i class="fas fa-phone"></i><p>44 91 48 99</p> <i class="fab fa-facebook-f"></i>
-                    
-                <div class="links">
-                    <a href="index.html">Velkommen</a>
-                    <a href="#">Guldslibning & behandling</a>
-                    <a href="#">Linoleum, vinyl & tæpper</a>
-                    <a href="#">Gulvvådrum</a>
-                    <a href="#">Trægulv</a>
-                    <a href="#">Om os</a>
-                    <a href="#">Kontakt</a>
+                <div class="nav__logo_container">
+                    <img class="nav__logo" src="/img/logo_korrekt.png" alt="Vedtsted logo" />
                 </div>
-            
+                <div class="nav__contact">
+                    <i class="FA fas fa-envelope"> </i><a href="mailto:Info@vedsted-gulve.dk">Info@vedsted-gulve.dk</a>
+                    <i class="FA fas fa-phone"></i>
+                    44 91 48 99
+                    <i class="FA fab fa-facebook-f"></i>
+
+                    <div class="nav__links">
+                        <a href="index.html">Velkommen</a>
+                        <a href="#">Guldslibning & behandling</a>
+                        <a href="#">Linoleum, vinyl & tæpper</a>
+                        <a href="#">Gulvvådrum</a>
+                        <a href="#">Trægulv</a>
+                        <a href="#">Om os</a>
+                        <a href="#">Kontakt</a>
+                    </div>
+                </div>
             </nav>
-            
+
             <div class="slider">
-                <img src="/img/slider.jpg" alt="slider">
+                <img src="/img/slider.jpg" alt="slider" />
+                <div class="slider__txt">Vil du have<br>flotte gulve?
+                    <div class="slider__btn">Få et tilbud</div>
+                </div>
             </div>
         </header>
         <main>
             <div class="txt-box">
-            <p>Velkommen til Vested Gulvservice - din professionelle gulvpartner</p>
-            <p>Har du brug for at få flotte gulve? Så kan vi hjælpe dig. 
-                Vi kan det hele: Rive gulve op, lægge nye, isolere, slibe og selvfølgelig behandle dem med de bedeste produkter.
-                Bare spørg - så finder vi løsningen.
-            </p>
-            <div class="udvalg">
-                
-                <img src="/img/behandling.png" alt="Guldslibning og behandling">
-                <img src="/img/vaadrum.png" alt="Vådrum">
-                <img src="/img/linoleum.png" alt="Linoleum">
-                <img src="/img//traegulve.png" alt="Trægulve">
+                <h1>
+                    Velkommen til Vested Gulvservice <br>- din professionelle gulvpartner
+                </h1>
+                <p>
+                    Har du brug for at få flotte gulve? Så kan vi hjælpe dig.<br> Vi kan det
+                    hele: Rive gulve op, lægge nye, isolere, slibe og selvfølgelig<br>
+                    behandle dem med de bedeste produkter.<br> Bare spørg - så finder vi
+                    løsningen.
+                </p>
+                <div class="main__cards">
+                    <div class="main__card">
+                        <img src="/img/behandling.png" alt="Guldslibning og behandling" />
+                        <h3>Gulvslibning & Behandling</h3>
+                    </div>
+                    <div class="main__card">
+                        <img src="/img/vaadrum.png" alt="Vådrum" />
+                        <h3>Gulvvådrum</h3>
+                    </div>
+                    <div class="main__card">
+                        <img src="/img/linoleum.png" alt="Linoleum" />
+                        <h3>Linoleum, vinyl & tæpper</h3>
+                    </div>
+                    <div class="main__card">
+                        <img src="/img//traegulve.png" alt="Trægulve" />
+                        <h3>Trægulv</h3>
+                    </div>
+                </div>
             </div>
-        </div>
 
             <div class="slider">
-                <img src="/img/trae.jpg" alt="slider">
+                <img src="/img/trae.jpg" alt="slider" />
             </div>
 
             <div class="txt-box">
-                <p>Kontakt os</p>
-                <p>Kontakt os i dag på telefon: 44 91 48 91 eller på e-mail: info@vedsted-gulve.dk og lad os høre, hvad du drømmer om</p>
+                <h2>Kontakt os</h2>
+                <p>
+                    Kontakt os i dag på telefon: <b>44 91 48 91</b> eller på e-mail:
+                    <b>info@vedsted-gulve.dk</b> og lad os høre,<br> hvad du drømmer om
+                </p>
                 <p>Så skal vi nok gøre vores for, at drømmet går i opfyldelse.</p>
+
+                <div class="main__contact">
+                    <div class="main__form">
+                        <form name="myForm" action="./index.html" method="post" id="minForm" autocomplete="on">
+                            <input type="text" name="fnavn" placeholder="Navn" pattern="[a-zA-Z]+" />
+                            <input type="tel" name="telefon" placeholder="Telefon" pattern="[0-9]{8,10}$" />
+                            <input type="email" name="email" placeholder="Mailaddresse" autocomplete="off"
+                                pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/" />
+                            <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Besked"
+                                class="form__besked"></textarea>
+                            <input type="submit" id="sendKnap" value="Send" />
+                        </form>
+                    </div>
+                    <div class="main__map">
+                        <div id="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7664914461984!2d12.349758816042021!3d55.60607751076591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465257be2c7f9415%3A0x130dec6e42306dd8!2sIndustrivangen%2022%2C%202635%20Ish%C3%B8j!5e0!3m2!1sda!2sdk!4v1623684426212!5m2!1sda!2sdk"
+                                width="530" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
             <div class="txt-box">
-                <img src="/img/aaa.png" alt="AAA">
-                <p>test</p>
-                <img src="/img/knaekcancer.jpg" alt="Knæk cancer">
+                <div class="footer__info-box">
+                    <img src="/img/aaa.png" alt="AAA" />
+                    <div>
+                        <h4>Byggeriets Ankenævn</h4>
+                        <p>Nørre Voldgade 106, 1358 Kbh K</p>
+                        <p>Info@byggerietsankenaevn.dk</p>
+                        <p>www.byggerietsankenaevn.dk</p>
+                    </div>
+                    <img src="/img/knaekcancer.jpg" alt="Knæk cancer" />
+                </div>
+                <div class="footer__credits">
+                    <p>
+                        <b>Vedsted Gulvservice ApS</b> | Industrivangen 22 | 2635 Ishøj | Tlf.:
+                        4491 4891 | info@vedsted-gulve.dk
+                    </p>
+                    <p>Designet af Standoutmedia</p>
+                </div>
             </div>
         </footer>
     </div>
-    
 </body>
 
 </html>
