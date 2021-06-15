@@ -117,8 +117,9 @@ nav {
 }
 
 .nav__logo {
-  max-width: 200px;
-  margin-right: 50px;
+  max-width: 150px;
+  margin-right: 65px;
+  margin-top: 20px;
 }
 
 .nav__contact {
@@ -395,11 +396,17 @@ footer {
     padding-bottom: 30px;
   }
 
+  .nav__logo {
+    max-width: 150px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
   .nav__contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 10px 40px 10px;
+    margin-bottom: 35px;
     min-width: 100vw;
     min-height: 200px;
   }
